@@ -2,7 +2,8 @@
 
 :root {
    --white: #ffffff;
-   --Blue_01: #1f3f68;
+   --blue_01: #1f3f68;
+   --blue_02: #316099;
    --black: #000;
    --font-dark: #222;
    --blue_04: #5a98d0;
@@ -58,10 +59,11 @@ body {
    display: flex;
    justify-content: space-around;
    margin-top: 4.8rem;
+   padding-bottom: 9.5rem;
 }
 
 .font-h1 {
-   color: var(--Blue_01);
+   color: var(--blue_01);
    font-size: 4rem;
    font-style: normal;
    font-weight: 300;
@@ -72,7 +74,7 @@ body {
 
 .some-text {
    margin-top: 2rem;
-   color: var(--Blue_01);
+   color: var(--blue_01);
    font-family: Roboto;
    font-size: 1rem;
    font-style: normal;
@@ -89,7 +91,7 @@ body {
    border-radius: 0.625rem;
    background: var(--blue_04);
    box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.20);
-   padding: 15px 50px;
+   padding: 1rem 5rem;
    color: #FFF;
    text-align: center;
    font-family: Roboto;
@@ -135,7 +137,7 @@ body {
 
 .font-h3 {
    margin-top: 3rem;
-   color: var(--Blue_01);
+   color: var(--blue_01);
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 400;
@@ -159,6 +161,10 @@ body {
    font-weight: 400;
    line-height: 1.875rem;
    letter-spacing: 0.04375rem;
+}
+
+.finished-project {
+   margin-bottom: 7rem;
 }
 
 .project_desc {
@@ -187,7 +193,7 @@ body {
    z-index: 9;
 }
 
-.project_main__img {
+.project_main__viel {
    position: absolute;
    width: 100%;
    height: 100%;
@@ -195,7 +201,7 @@ body {
    transition: all 0.5s;
 }
 
-.project_main__img:hover {
+.project_main__viel:hover {
    opacity: 0;
 }
 
@@ -211,4 +217,78 @@ body {
    line-height: 2.875rem;
    letter-spacing: 0.1rem;
    z-index: 10;
+}
+
+.project_items {
+   display: flex;
+   margin: 2rem -1rem 0;
+}
+
+.project_item {
+   margin: 0 1rem;
+   position: relative;
+   cursor: pointer;
+}
+
+.project_item h3 {
+   position: absolute;
+   top: 2rem;
+   left: 2rem;
+   color: var(--white);
+   font-size: 1.75rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.875rem;
+   letter-spacing: 0.0875rem;
+   z-index: 10;
+}
+
+.project_item__viel {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 0.625rem;
+   background: linear-gradient(309deg, rgba(66, 165, 245, 0.40) -1.71%, rgba(21, 101, 192, 0.60) 74.54%);
+   transition: all 0.5s;
+}
+
+.project_item__viel:hover {
+   opacity: 0;
+}
+
+.work {
+   background: var(--blue_02);
+   margin-top: 1px;
+   padding-top: 5.69rem;
+   padding-bottom: 6rem;
+}
+
+.work_items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.work_item {
+   max-width: 46%;
+}
+
+.work_item__title {
+   width: 70%;
+   color: var(--white);
+   font-size: 2.25rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 2.875rem;
+   letter-spacing: 0.1125rem;
+}
+
+.work_item__desc {
+   color: var(--white);
+   font-size: 1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.625rem;
+   letter-spacing: 0.05rem;
+   opacity: 0.6;
+   margin-top: 2rem;
 }
